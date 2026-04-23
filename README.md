@@ -58,7 +58,7 @@ The design prioritizes:
 * Large clickable elements
 * Simple and readable layout
 
-### 6. 
+### 6. Affordance
 
 * Buttons clearly indicate actions
 * Inputs labeled with units ("minutes")
