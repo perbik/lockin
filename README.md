@@ -1,73 +1,88 @@
-# React + TypeScript + Vite
+# LOCKIN - A Simple Pomodoro Timer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A minimalist Pomodoro timer built with **React + TypeScript + Vite**
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Purpose
 
-## React Compiler
+This application helps users:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* maintain focus through structured work sessions
+* take intentional breaks
+* reduce distractions with a clean interface
 
-## Expanding the ESLint configuration
+The design prioritizes:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* clarity
+* ease of interaction
+* visual hierarchy
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Features
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+* Focus, Short Break, and Long Break modes
+* Play / Pause / Reset timer controls
+* Skip session functionality
+* Custom timer settings (modal-based)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## UI/UX Design Principles
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 1. Minimalism
+
+* Removes unnecessary elements
+* Keeps user attention on the timer
+
+### 2. Visual Hierarchy
+
+* Large timer display as primary focus
+* Secondary controls clearly grouped
+
+### 3. Consistency
+
+* Unified green color palette
+* Consistent typography (Britanica)
+* Reusable components
+
+### 4. Feedback & Interaction
+
+* Hover effects on buttons
+* Real-time timer updates
+* Modal overlay for focused interaction
+
+### 5. Accessibility
+
+* Large clickable elements
+* Simple and readable layout
+
+### 6. 
+
+* Buttons clearly indicate actions
+* Inputs labeled with units ("minutes")
+* Icons reinforce functionality
+
+---
+
+## Considerations
+
+* Only essential elements are displayed
+* No unnecessary distractions
+* Users can pause, skip, and customize timers anytime
+* Immediate visual response to user actions
+
+---
+
+## Design Decisions
+
+| Element             | Reason                                     |
+| ------------------- | ------------------------------------------ |
+| Green color palette | Promotes calmness and focus                |
+| Rounded UI          | Creates a softer, less stressful interface |
+| Modal settings      | Maintains user context                     |
+| Large timer         | Improves readability                       |
+
+
+
