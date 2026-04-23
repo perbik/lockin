@@ -1,6 +1,7 @@
 # LOCKIN - A Simple Pomodoro Timer
 
 A minimalist Pomodoro timer built with **React + TypeScript + Vite**
+
 <img width="1920" height="911" alt="localhost_5173_" src="https://github.com/user-attachments/assets/e9a1fd34-0f77-4f37-9a0f-2fe07f1c3a42" />
 <img width="1920" height="911" alt="localhost_5173_ (1)" src="https://github.com/user-attachments/assets/830e1217-57d5-45ba-bdad-8c7b45e1dc2a" />
 
